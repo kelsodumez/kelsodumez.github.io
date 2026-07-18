@@ -25,7 +25,9 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
+        <div className="flex flex-col flex-1 items-center justify-center bg-(--secondary-background) font-sans">
         {children}
+        </div>
       </body>
     </html>
   );
