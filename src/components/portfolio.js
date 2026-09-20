@@ -4,7 +4,7 @@ import {usePathname} from "next/navigation";
 import Link from "next/link";
 
 const portfolioItems = [
-    { name: 'Tiny Politik', href: '/portfolio/tiny-politik' },
+    { name: 'Tiny Politik (Alpha)', href: '/portfolio/tiny-politik-alpha' },
     {name: 'Cobalt', href: '/portfolio/cobalt' },
     {name: 'This Website!', href: '/portfolio/website' },
 ];
@@ -16,7 +16,7 @@ const portfolioItems = [
 
 export default function PortfolioItems() {
     const pathName = usePathname();
-    return (<portfolio>
+    return (<div className={"Portfolio"}>
         {portfolioItems.map((item) => {
             return <Link
                 key={item.name}
@@ -25,5 +25,5 @@ export default function PortfolioItems() {
                 {item.name}
             </Link>
         })}
-    </portfolio>)
+    </div>)
 }
