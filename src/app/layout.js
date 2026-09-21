@@ -21,6 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
       <html lang="en">
+      <head>
+      <meta name="google-site-verification" content="nepHzCd3kLgbsMerKFsSTE9wv2x54KRa9sF2bX0arVQ" />
+          <title>Kelso du Mez</title>
+      </head>
       <body>
       <div className="title"><header>Kelso</header><header>du</header><header>Mez</header></div>
       <div className="navbar"><Navbar /></div>
