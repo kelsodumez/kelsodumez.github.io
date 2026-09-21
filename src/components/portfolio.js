@@ -1,6 +1,4 @@
 "use client";
-
-import {usePathname} from "next/navigation";
 import Link from "next/link";
 
 const portfolioItems = [
@@ -9,13 +7,7 @@ const portfolioItems = [
     {name: 'This Website!', href: '/portfolio/website' },
 ];
 
-    const classNames = (classes) => {
-        return "";
-    };
-
-
 export default function PortfolioItems() {
-    const pathName = usePathname();
     return (<div className={"Portfolio"}>
         {portfolioItems.map((item) => {
             return <Link

@@ -15,7 +15,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const pathname = usePathname();
-
     return (
         <navbar>
             {navigation.map((item) => {
