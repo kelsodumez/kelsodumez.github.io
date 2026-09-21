@@ -14,7 +14,7 @@ const classNames = (classes) => {
 
 export default function CurrentProjects() {
     const pathName = usePathname();
-    return (<div className={"CurrentWork"}>
+    return (<div className={"Portfolio"}>
         {currentProjects.map((item) => {
             return <Link
                 key={item.name}

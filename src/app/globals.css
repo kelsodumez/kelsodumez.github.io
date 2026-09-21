@@ -130,7 +130,6 @@ img {
 }
 
 .Portfolio {
-  padding-top: 4vh;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -141,7 +140,7 @@ img {
 .Portfolio > a
 {
   padding-bottom: 2vh;
-  font-size: 1.6rem;
+  font-size: 1.25rem;
 }
 
 .row {
@@ -242,20 +241,5 @@ img {
     line-height: 1;
     font-weight: 700;
     padding-bottom: 1rem;
-  }
-
-  .Portfolio {
-    padding-top: 4vh;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    justify-self: end;
-    width: auto;
-  }
-
-  .Portfolio > a
-  {
-    padding-bottom: 2vh;
-    font-size: 1.6rem;
   }
 }
