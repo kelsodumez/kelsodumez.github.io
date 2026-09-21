@@ -5,7 +5,14 @@ export default function Page() {
     return (
         <div>
             <h1>Tiny Politik (Alpha)</h1>
-            <Image src="/tiny-politik/cover.png"  width="500" height="500" alt="Tiny Politik Photo"/>
+            {/*<Image src="/tiny-politik/cover.png"  width="500" height="500" alt="Tiny Politik Photo"/>*/}
+            <div className="video-container">
+                <iframe className="responsive-iframe" src="https://www.youtube.com/embed/rYzxd1EN6to"
+                    title="TinyPolitik | Multiplayer Casual Strategy Trailer" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen></iframe>
+            </div>
             <p>
                 Tiny Politik is a prototype game that was produced over a period of twelve weeks as part of the PROD322
                 ‘Gaming Project Studio 2’ course at the University of Canterbury in 2024.
@@ -19,7 +26,10 @@ export default function Page() {
             <li>Playtest Organisation & Management</li>
             <li>General Project Management</li>
 
-            <br></br>
+            <h1>Process</h1>
+
+            <h1>Playtesting</h1>
+
             <h1>Design Pillars</h1>
             <h2>Casual</h2>
             <p>The game will be played casually, requiring only a small (5-20 minutes) amount of time per day.</p>
@@ -32,7 +42,8 @@ export default function Page() {
             </p>
             <h2>Asynchronously Turn Based</h2>
             <p>
-                The game will be turn based. Each player will be able to asynchronously make their turns within a time window,
+                The game will be turn based. Each player will be able to asynchronously make their turns within a time
+                window,
                 with all player turns being resolved at a specific time by the server.
             </p>
             <h2>Slow Paced</h2>
