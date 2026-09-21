@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: white;
+  --background: #DEDEDE;
   --secondary-background: white;
-  --foreground: black;
-  --accent: black;
+  --foreground: #332C2B;
+  --accent: #7B4D35;
 }
 
 @theme {
@@ -35,7 +35,7 @@ body > * {
 
 
 a {
-  color: magenta;
+  color: var(--accent);
   font-style: italic;
 }
 
