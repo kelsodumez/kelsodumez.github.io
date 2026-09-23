@@ -112,14 +112,14 @@ a:hover {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   font-weight: 550;
   padding-bottom: 1rem;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-wrap: wrap;
 }
 
@@ -178,18 +178,23 @@ img {
 
 .row {
   padding-top: 2vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .col {
-  flex: 50%;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-content: space-evenly;
+  height: fit-content;
 }
 
 .col > * {
-  padding-bottom: 2vw;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*padding-bottom: 2vh;*/
 }
 
 @media (min-width: 1150px)

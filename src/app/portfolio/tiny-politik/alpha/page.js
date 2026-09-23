@@ -1,56 +1,41 @@
-import cover from "../../../../../public/tiny-politik/cover.png";
-import Image from 'next/image';
-
 export default function Page() {
     return (
         <div>
             <h1>Tiny Politik (Alpha)</h1>
             {/*<Image src="/tiny-politik/cover.png"  width="5" height="5" alt="Tiny Politik Photo"/>*/}
-            <div className="video-container">
-
-                <iframe className="responsive-iframe" src="https://www.youtube.com/embed/rYzxd1EN6to"
-                    title="TinyPolitik | Multiplayer Casual Strategy Trailer" frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen></iframe>
+            <div className={"item-showcase"}>
+                <div className="video-container">
+                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/rYzxd1EN6to"
+                        title="TinyPolitik | Multiplayer Casual Strategy Trailer" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen></iframe>
+                </div>
+                <p>
+                    Brief
+                    Tiny Politik is a prototype game that was produced over a period of twelve weeks as part of the PROD322
+                    ‘Gaming Project Studio 2’ course at the University of Canterbury in 2024.
+                </p>
+                <br></br>
+                <h2>
+                    My Roles
+                </h2>
+                <li>Creative/Visual Lead</li>
+                <li>UI Implementation</li>
+                <li>Playtest Organisation & Management</li>
+                <li>General Project Management</li>
             </div>
-            <p>
-                Tiny Politik is a prototype game that was produced over a period of twelve weeks as part of the PROD322
-                ‘Gaming Project Studio 2’ course at the University of Canterbury in 2024.
-            </p>
-            <br></br>
-            <h2>
-                My Roles
-            </h2>
-            <li>Creative/Visual Lead</li>
-            <li>UI Implementation</li>
-            <li>Playtest Organisation & Management</li>
-            <li>General Project Management</li>
-
+            <div className="item-research">
+                <h1>Paper Prototype</h1>
+            </div>
+            <div className="item-implementation">
+                <h1>Digital Prototype</h1>
+            </div>
+            <div className="item-reflection">
+                <p>some reflective stuff here</p>
+            </div>
             <h1>Process</h1>
 
-            <h1>Playtesting</h1>
-
-            <h1>Design Pillars</h1>
-            <h2>Casual</h2>
-            <p>The game will be played casually, requiring only a small (5-20 minutes) amount of time per day.</p>
-            <h2>Social Multiplayer</h2>
-            <p>The game will be played online, though only amongst small-medium (8-30) groups of friends.</p>
-            <h2>4X</h2>
-            <p>
-                Gameplay mechanics will follow a typical 4X structure similar to that of Civilisation.
-                Players will be able to found countries, create armies, expand, trade and go to war with other players.
-            </p>
-            <h2>Asynchronously Turn Based</h2>
-            <p>
-                The game will be turn based. Each player will be able to asynchronously make their turns within a time
-                window,
-                with all player turns being resolved at a specific time by the server.
-            </p>
-            <h2>Slow Paced</h2>
-            <p>
-                Turns will occur only a few times a day (3-5).
-            </p>
         </div>
     );
 }
