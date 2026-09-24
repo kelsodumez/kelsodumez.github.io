@@ -28,12 +28,7 @@ export default function RootLayout({ children }) {
           <title>Kelso du Mez</title>
       </head>
       <body>
-      <div className="title">
-          <header>Kelso</header>
-          <header>du</header>
-          <header>Mez</header>
-      </div>
-      <div className="navbar"><Navbar/></div>
+      <Navbar/>
       <div className="content">{children}</div>
       </body>
       </html>

@@ -16,21 +16,23 @@ function classNames(...classes) {
 export default function Navbar() {
     const pathname = usePathname();
     return (
-        <navbar>
+        <div className="navbar">
+            <div className="title">
+                <header>Kelso</header>
+                <header>du</header>
+                <header>Mez</header>
+            </div>
+            <div className="nav-links">
             {navigation.map((item) => {
                 const isCurrent = pathname === item.href;
                 return (
-                    <Link
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                            isCurrent ? 'header-focused' : 'header'
-                        )}
-                    >
+                    <Link key={item.name} href={item.href}
+                        className={classNames(isCurrent ? 'header-focused' : 'header')}>
                         {item.name}
                     </Link>
                 )
             })}
-        </navbar>
+            </div>
+        </div>
     )
 }
