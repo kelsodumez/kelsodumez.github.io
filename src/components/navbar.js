@@ -19,8 +19,8 @@ export default function Navbar() {
         <div className="navbar">
             <div className="title">
                 <header>Kelso</header>
-                <header>du</header>
-                <header>Mez</header>
+                <header>du Mez</header>
+                {/*<header></header>*/}
             </div>
             <div className="nav-links">
             {navigation.map((item) => {

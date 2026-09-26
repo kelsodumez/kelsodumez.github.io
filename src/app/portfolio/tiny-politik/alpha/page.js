@@ -1,8 +1,9 @@
+import React from 'react';
 export default function Page() {
     return (
         <div>
             <h1>Tiny Politik (Alpha)</h1>
-            {/*<Image src="/tiny-politik/cover.png"  width="5" height="5" alt="Tiny Politik Photo"/>*/}
+            {/*<img src="/tiny-politik/cover.png"  width="5" height="5" alt="Tiny Politik Photo"/>*/}
             <div className={"item-showcase"}>
                 <div className="video-container">
                     <iframe className="responsive-iframe" src="https://www.youtube.com/embed/rYzxd1EN6to"
